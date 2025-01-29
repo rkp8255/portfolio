@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <h2>portfolio</h2>
+        </div>
+        
+        <div class="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+        <div class="navbar">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+            </ul>
+        </div>
+        <div class="button">
+        <button class="btn"><a href="#contact">Contact Me</a></button>
+        </div>
+    </header>
+
+    <div class="hero">
+        <div class="right">
+            <h1>Hi, I am Chaitanya Pawar</h1>
+            <h2 class="animated-text typing-effects">
+                <span class="text-wrapper">
+                    <span class="text">DESIGNER</span>
+                    <span class="text">FINANCE CONCULTANT</span>
+                    <span class="text">ENGINEER</span>
+                </span>
+            </h2>
+            <p>I am an electronics engineer passionate about my work, eager to drive the future with the skills I have acquired.</p>
+            <div class="buttton">
+                <button class="h-btn">Let's Talk</button>
+            </div>
+            <div class="social-media">
+                <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-github"></i></a></li>
+            </div>
+        </div>
+        <div class="left">
+            <div class="image">
+                <img src="image.png" alt="Profile Image" />
+            </div>
+        </div>
+    </div>
+
+    <section id="about">
+        <h1>About </h1>
+        <div class="about-container">
+            <div class="profile-pic">
+                <img src="image.png" alt="Chaitanya Pawar">
+                <div class="loading-border"></div>
+            </div>
+            <h2>cyber security</h2>
+            <p>As a dynamic professional with a dual expertise in engineering and financial advisory, I leverage my analytical skills and strategic thinking to deliver innovative solutions that bridge technical excellence and financial acumen. With a background in engineering, I possess a strong foundation in problem-solving and critical thinking, which I seamlessly integrate into my role as a financial advisor. My approach is both systematic and empathetic, ensuring that my clients receive personalized, data-driven advice tailored to their unique financial goals. Whether it's optimizing operational efficiency through cutting-edge engineering principles or crafting comprehensive financial strategies, I am committed to driving success and achieving sustainable growth for my clients.</p>
+            <button>Read More</button>
+        </div>
+    </section>
+
+    <section id="education">
+        <h1>My Education </h1>
+        <div class="education-timeline">
+            <div class="education-item active" onclick="showEducationContent(1)">
+                <h2>0-10</h2>
+            </div>
+            <div class="education-item" onclick="showEducationContent(2)">
+                <h2>11-12</h2>
+            </div>
+            <div class="education-item" onclick="showEducationContent(3)">
+                <h2>post graduate</h2>
+            </div>
+            <div class="education-item" onclick="showEducationContent(4)">
+                <h2>graduate</h2>
+            </div>
+        </div>
+        <div class="education-content active" id="education-content-1">
+            <h2>BVMPS</h2>
+            <p>INDIA</p>
+            <p><strong>Medium:</strong> English</p>
+            <p>When i did my basic education for known about the real world for know by solution around different field on the every section </p>
+        </div>
+        <div class="education-content" id="education-content-2">
+            <h2>govt olytechnic</h2>
+            <p>india</p>
+            <p><strong>field:</strong> Science</p>
+            <p>This is some example text for the 11-12 education content.</p>
+        </div>
+        <div class="education-content" id="education-content-3">
+            <h2>University Name</h2>
+            <p>Location</p>
+            <p><strong>Degree:</strong> diloma of engineer</p>
+            <p>This is some example text for the Bachelor education content.</p>
+        </div>
+        <div class="education-content" id="education-content-4">
+            <h2>University Name</h2>
+            <p>Location</p>
+            <p><strong>Degree:</strong> degree of Science</p>
+            <p>This is some example text for the education content.</p>
+        </div>
+    </section>
+
+    <script>
+        function showEducationContent(id) {
+            var items = document.getElementsByClassName('education-content');
+            var timelineItems = document.getElementsByClassName('education-item');
+            for (var i = 0; i < items.length; i++) {
+                items[i].classList.remove('active');
+                timelineItems[i].classList.remove('active');
+                if (i === id - 1) {
+                    items[i].classList.add('active');
+                    timelineItems[i].classList.add('active');
+                }
+            }
+        }
+    </script>
+    <script src="script.js"></script>
+</body>
+
+</html>
+
+<section id="skills">
+
+    <div class="skills-container">
+        <div class="left">
+            <h2>My creative skills.</h2>
+            <p>i like to exlore so many skill with .</p>
+            <button>Read More</button>
+        </div>
+        <div class="right">
+            <h2>My skills</h2>
+            <h3>What I know.</h3>
+            <div class="skill-bar">
+                <span>web Developer</span>
+                <div class="progress-bar">
+                    <div class="progress" style="--progress-width: 90%;">
+                        <span>90%</span>
+                    </div>
+                </div>
+            </div>
+            <div class="skill-bar">
+                <span>App develoment</span>
+                <div class="progress-bar">
+                    <div class="progress" style="--progress-width: 60%;">
+                        <span>60%</span>
+                    </div>
+                </div>
+            </div>
+            <div class="skill-bar">
+                <span>Greahics designing</span>
+                <div class="progress-bar">
+                    <div class="progress" style="--progress-width: 45%;">
+                        <span>45%</span>
+                    </div>
+                </div>
+            </div>
+            <div class="skill-bar">
+                <span>pschology</span>
+                <div class="progress-bar">
+                    <div class="progress" style="--progress-width: 50%;">
+                        <span>50%</span>
+                    </div>
+                </div>
+            </div>
+            <div class="skill-bar">
+                <span>unity & unreal</span>
+                <div class="progress-bar">
+                    <div class="progress" style="--progress-width: 70%;">
+                        <span>70%</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="projects" class="project-section">
+    <h2>My Projects</h2>
+    <div class="project-grid">
+        <div class="project-card">
+            <img src="image.png" alt="Ecommerce Website Design">
+            <h3>Ecommerce Website Design</h3>
+            <p>Thriving Facebook community and top-ranked podcast, Amy inspires a grounded, tangible and self-affirming sense of "Wow! I really can do this" for over 100,000 online entrepreneurs. Best-selling marketing courses.</p>
+            <div class="buttons">
+                <a href="#" class="view-button">VIEW</a>
+                <a href="https://github.com/yourusername/project1" class="github-button">GITHUB</a>
+            </div>
+        </div>
+        <div class="project-card">
+            <img src="image.png" alt="LMS/Course Website Design">
+            <h3>LMS/Course Website Design</h3>
+            <p>Podcast Thriving Facebook community and top-ranked, Amy inspires a grounded, tangible and self-affirming sense of "Wow! I really can do this" for over 100,000 online entrepreneurs. Best-selling marketing courses.</p>
+            <div class="buttons">
+                <a href="#" class="view-button">VIEW</a>
+                <a href="https://github.com/yourusername/project2" class="github-button">GITHUB</a>
+            </div>
+        </div>
+        <div class="project-card">
+            <img src="image.png" alt="Rymo Ecommerce Design">
+            <h3>Rymo Ecommerce Design</h3>
+            <p>Top-ranked Thriving Facebook community and podcast, Amy inspires a grounded, tangible and self-affirming sense of "Wow! I really can do this" for over 100,000 online entrepreneurs. Best-selling marketing courses.</p>
+            <div class="buttons">
+                <a href="#" class="view-button">VIEW</a>
+                <a href="https://github.com/yourusername/project3" class="github-button">GITHUB</a>
+            </div>
+        </div>
+    </div>
+    <div class="more-button-container">
+      <a href="#" class="more-button">More</a>
+    </div>
+  </div>
+    </div>
+</section>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact Me</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <section id="contact" class="contact-section">
+        <h2>Contact Me</h2>
+        <form action="submit_form.php" method="post">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
